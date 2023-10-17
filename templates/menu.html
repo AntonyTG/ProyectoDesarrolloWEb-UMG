@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu saesade</title>
+    <link rel="stylesheet" href="static/css/stilos.css">
+    <style>
+        body {
+            background-image: url('static/img/bg6.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover; /* Mantén el tamaño original de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list"> 
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="static/assets/inicio.svg" class="list__img">
+                    <a href="{{ url_for('login') }}" class="nav__link">Inicio</a>
+                </div>        
+            </li>
+
+            <li class="list__item list__item--click"> 
+                <div class="list__button list__button--click">
+                    <img src="static/assets/doc.svg" class="list__img">
+                    <a href="#" class="nav__link">Cursos</a>
+                    <img src="static/assets/arrow.svg" class="list__arrow">
+                </div>
+                
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Ciencias Naturales</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Computación</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Música</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Matemáticas</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Física</a>
+                    </li>
+                </ul>
+
+            </li>
+            
+            
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="static/assets/pago.svg" class="list__img">
+                    <a href="#" class="nav__link">Pagos</a>
+                    <img src="static/assets/arrow.svg" class="list__arrow">
+                </div>
+                
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Inscripciones</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Mensualidades</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Multas</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Extraordinarios</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Estado de Cuenta</a>
+                    </li>
+                </ul>
+
+
+            </li>
+
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="static/assets/campa.svg" class="list__img">
+                    <a href="#" class="nav__link">Horarios</a>
+                    <img src="static/assets/arrow.svg" class="list__arrow">
+                </div>
+                
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Primer Grado</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Segundo Grado</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Tercer Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Cuarto Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Quinto Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Sexto Grado</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="static/assets/stats.svg" class="list__img">
+                    <a href="#" class="nav__link">Notas</a>
+                    <img src="static/assets/arrow.svg" class="list__arrow">
+                </div>
+                
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Primer Grado</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Segundo Grado</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Tercer Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Cuarto Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Quinto Grado</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Sexto Grado</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="static/assets/contac.svg" class="list__img">
+                    <a href="#" class="nav__link">Contactos</a>
+                    <img src="static/assets/arrow.svg" class="list__arrow">
+                </div>
+                
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Numero de Telefono</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#"class="nav__link nav__link--inside">Correo Electronico</a>
+                    </li>
+
+                </ul>
+
+
+            </li>
+
+
+        </ul>
+    </nav>
+
+    <script> src="main.js"</script>
+</body>
+</html>

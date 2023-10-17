@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login saesade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/estilos.css">
+    <link rel="stylesheet" href="static/css/stilos.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="list">
+            <!-- Aquí van los elementos del menú -->
+        </ul>
+    </nav>
+
+    <div class="contenedor-formulario contenedor">
+        <div class="imagen-formulario">
+            <img src="static/img/bg10.png" alt="user-login">
+
+        </div>
+
+        <form class="formulario" action="/login" method="POST">
+            <div class="form-floating">
+        <input type="text" class="formulario" id="username" name="username" placeholder="Ingresa tu usuario">
+        <label for="username">Username</label>
+    </div>
+    <div class="form-floating mt-2">
+        <input type="password" class="formulario" name="password" placeholder="Ingresa tu contraseña">
+        <label for="password">Password</label>
+    </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar</button>           
+        </form>
+    </div>
+
+    <!-- Formulario de Registro -->
+    <div class="contenedor-formulario contenedor">
+        <form class="formulario" action="/registro" method="POST">
+            <h2>Registro de Usuario</h2>
+            <div class="form-floating">
+                <input type="text" class="formulario" id="new_username" name="new_username" placeholder="Ingresa tu nuevo usuario">
+                <label for="new_username">Nuevo Username</label>
+            </div>
+            <div class="form-floating mt-2">
+                <input type="password" class="formulario" name="new_password" placeholder="Ingresa tu nueva contraseña">
+                <label for="new_password">Nueva Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Registrarse</button>
+            <div id="error-message" style="color: red;"></div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

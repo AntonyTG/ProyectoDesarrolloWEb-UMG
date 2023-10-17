@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/bg7.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Alinea el contenido en columna */
+}
+
+/* Estilos para la imagen sobre el formulario */
+.contenedor-formulario .imagen-formulario {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contenedor-formulario .imagen-formulario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.formulario {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: left;
+    margin-top: 20px; /*margen superior para separar la imagen del formulario */
+}
+
+
+/* Estilos para el formulario */
+.form-floating {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.formulario label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 5px;
+    font-size: 14px;
+    color: #888;
+    pointer-events: none;
+    transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+
+.formulario input:focus + label,
+.formulario input:not(:placeholder-shown) + label {
+    top: 5px;
+    left: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.formulario button {
+    background-color: #14a6b1cc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}

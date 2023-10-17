@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400 & family= Roboto:ital,wght@0,400;0,700;1,400;1,700 & display=swap' );
+
+/* Resetear los estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.nav {
+    background-color: #52796f;
+    color: white;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.list__item {
+    position: relative;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.list__img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Dropdown */
+.list__show {
+    display: none;
+    position: absolute;
+    background-color: #52796f;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.list__item--click:hover .list__show {
+    display: block;
+}
+
+.list__inside {
+    padding: 8px 10px;
+}
+
+.list__arrow {
+    width: 20px;
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.list__item--click:hover .list__arrow {
+    transform: rotate(180deg);
+}
+
+/* Media Query para dispositivos pequeños */
+@media (max-width: 768px) {
+    .list {
+        flex-direction: column;
+    }
+}
